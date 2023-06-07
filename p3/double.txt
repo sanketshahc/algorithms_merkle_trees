@@ -1,0 +1,11 @@
+Double
+
+Forgery.txt has 2 grammatically correct phrases.
+
+As depth increases, the number of max leaves increases exponentially (-> 2**d). Because our k value
+is only 1, only one leaf is input into the signature. This is essentially a birthday-problem. We
+have approximately (200 * 199 / 2) possible matches, each with z/z**2 probability of matching, which
+brings us to 2**d = 39800. Take the base-2 log to get d = 15.28. So d needs to be at least 16.
+
+
+
